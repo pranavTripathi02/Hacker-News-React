@@ -18,11 +18,16 @@ export default function SearchForm() {
   };
 
   return (
-    <div className='section search'>
-      <form className='search-form' onSubmit={handleSubmit}>
-        <div className='form-control'>
-          <label htmlFor='name'>Search for news</label>
+    <div className='d-flex text-center m-3'>
+      <form className='container-fluid' onSubmit={handleSubmit}>
+        <div className='input-group'>
+          {/* <label htmlFor='name'></label> */}
+          <span className='input-group-text'>
+            <i className='fas fa-search' />
+          </span>
           <input
+            className='form-control form-control-lg'
+            placeholder='Search for news'
             type='text'
             id='name'
             ref={searchVal}

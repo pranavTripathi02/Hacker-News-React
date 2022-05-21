@@ -1,17 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-import { Link, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { Home, Details, Default } from './pages';
-import { useGlobalContext } from './context';
+import Navbar from './components/Navbar';
 
 function App() {
-  const { isLoading } = useGlobalContext();
   return (
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/details' element={<Details />} />
-      <Route path='/*' element={<Default />} />
-    </Routes>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/details/:id' element={<Details />} />
+        <Route path='/*' element={<Default />} />
+      </Routes>
+    </>
   );
 }
 
