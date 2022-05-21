@@ -1,8 +1,8 @@
 React web app to search and display Hacker News using hn.agnolia.com SEARCH API.
 
 Running the app:
-        -'$npm i'
-        -'$npm start'
+`$npm i`
+`$npm start`
 
 1. Home Page
 !['Hacker-News screenshot'](./screenshots/display1.png)
