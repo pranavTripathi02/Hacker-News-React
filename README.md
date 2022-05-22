@@ -1,5 +1,8 @@
 React web app to search and display Hacker News using hn.agnolia.com SEARCH API.
 
+Hosted on NETLIFY
+https://phenomenal-mandazi-44dcf1.netlify.app/
+
 Running the app:
 ```
 $npm i
